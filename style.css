@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #442D21;
+  background-color: #FFF4E8;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 24px; 
+  overflow-wrap: anywhere;
+}
+
+header {
+  background-color: #974414;
+  color: #FFFFFF;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+h1, h2 {
+  color: #974414;
+}
+
+a {
+  color: #974414;
+  text-decoration: underline;
+}
+
+h1 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+h2 {
+  border-bottom: 2px solid #974414;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 25px;
+}
+
+nav a {
+  display: block;
+  padding: 8px 16px;
+  background-color: #FFFFFF;
+  color: #974414;
+  border: 2px solid #974414;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0;
+  max-width: 100%;
+}
+
+nav a:hover {
+  background-color: #974414;
+  color: #FFFFFF;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 4px solid #974414;
+  border-radius: 0.5rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.products > .card {
+  flex: 1 1 16rem;
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.card h2 {
+  border-bottom: none;
+  text-align: left;
+}
+
+.card .specs {
+  background-color: #974414;
+  color: #FFFFFF;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.card .description {
+  background-color: #FEF3C7;
+  color: #78350F;
+  padding: 0.5rem;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.request-form {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0d0c0;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #442D21;
+  border-radius: 4px;
+  font-family: inherit;
+  width: 100%;
+  max-width: 100%; 
+  box-sizing: border-box;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+  accent-color: #974414; 
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #974414; 
+  cursor: pointer;
+}
+
+.request-form select,
+.request-form input[type="number"],
+.request-form textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.request-form button {
+  padding: 10px 20px;
+  background-color: #974414;
+  color: #FFFFFF;
+  border: 2px solid #974414;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.request-form button:hover {
+  background-color: #442D21;
+  border-color: #442D21;
+}
+
+a:focus-visible, 
+input:focus-visible, 
+select:focus-visible, 
+textarea:focus-visible, 
+button:focus-visible {
+  outline: 3px solid #C2410C;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  main.page {
+    padding: 0.75rem;
+  }
+  .products > .card {
+    flex-basis: 100%;
+  }
+  nav {
+    flex-direction: column;
+  }
+}

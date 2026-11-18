@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Форма — Тёплая чашка · V07</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <header>
+    <p>Тёплая чашка · V07</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+  </nav>
+
+  <main class="page">
+    <h1>Ваш заказ</h1>
+    <p>Учебная форма. Данные пока не сохраняются.</p>
+
+    <form method="get" class="request-form">
+      <p class="form-field">
+        <label for="item">Название позиции</label>
+        <select id="item" name="item" required>
+          <option value="">Выберите из списка</option>
+          <option value="item1">Какао</option>
+          <option value="item2">Ягодный чай</option>
+          <option value="item3">Лимонный кекс</option>
+        </select>
+      </p>
+
+      <p class="form-field">
+        <label for="quantity">Количество порций</label>
+        <input id="quantity" name="quantity" type="number" min="1" step="1" value="2" required>
+      </p>
+
+      <p class="form-field">
+        <label for="notes">Пожелания к заказу</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Опишите ваши пожелания"></textarea>
+      </p>
+
+      <label class="checkbox-label">
+        <input id="extra1" name="extra1" type="checkbox" value="yes" checked>
+        Заказ с собой
+      </label>
+
+      <label class="checkbox-label">
+        <input id="extra2" name="extra2" type="checkbox" value="yes">
+        Добавить салфетки
+      </label>
+
+      <p class="form-field">
+        <label for="level">Температура подачи</label>
+        <input id="level" name="level" type="range" min="1" max="5" step="1" value="2">
+        <span>1 — Прохладно; 5 — Горячо</span>
+      </p>
+
+      <button type="submit">Выбрать заказ</button>
+      <p id="result" role="status" aria-live="polite"></p>
+    </form>
+
+    <p><a href="index.html">Назад</a></p>
+  </main>
+
+  <footer>
+    <p>Учебный прототип · Вариант 07</p>
+  </footer>
+</body>
+</html>
