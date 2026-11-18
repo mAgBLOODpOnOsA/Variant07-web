@@ -10,13 +10,8 @@
   "theme_color": "#974414",
   "icons": [
     {
-      "src": "images/item1.png",
+      "src": "images/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "images/item1.png",
-      "sizes": "512x512",
       "type": "image/png"
     }
   ]
